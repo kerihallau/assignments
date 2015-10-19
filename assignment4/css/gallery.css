@@ -1,0 +1,10 @@
+.cover-image{
+    width: 100%;
+}
+#gallery-wrapper{
+    height: 50vh;
+}
+
+.thumb img {
+	width: 200px;
+}

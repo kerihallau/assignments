@@ -1,0 +1,95 @@
+
+
+{"newsdata" : [
+	{
+    "content": "elit, amet adipisicing amet sit sit dolor elit, consectetur sed amet amet lorem amet lorem elit, consectetur sed do consectetur ",
+    "heading": "lorem sed ipsum elit, ",
+    "url": "lorem-sed-ipsum-elit",
+    "author": "Orlo Nolan",
+    "email": "Heber_Bradtke@yahoo.com",
+    "datePublished": "2015-10-04T11:52:03.561Z"
+}, {
+    "content": "adipisicing do sit amet lorem do sit dolor do do elit, ipsum elit, lorem do sit sit lorem do ipsum ",
+    "heading": "do elit, adipisicing consectetur ",
+    "url": "do-elit-adipisicing-consectetur",
+    "author": "Filomena Quitzon",
+    "email": "Daija_Friesen52@yahoo.com",
+    "datePublished": "2015-10-04T06:19:12.958Z"
+}, {
+    "content": "consectetur do ipsum adipisicing sed adipisicing elit, elit, consectetur lorem sit sit adipisicing lorem elit, consectetur do ipsum amet sed ",
+    "heading": "amet elit, do do ",
+    "url": "amet-elit-do-do",
+    "author": "Wava Kuhn",
+    "email": "Viviane.Krajcik@yahoo.com",
+    "datePublished": "2015-10-04T14:55:17.704Z"
+}, {
+    "content": "elit, consectetur consectetur ipsum sit consectetur do do lorem ipsum do adipisicing sit ipsum consectetur lorem dolor consectetur adipisicing dolor ",
+    "heading": "ipsum sit do sed ",
+    "url": "ipsum-sit-do-sed",
+    "author": "Ayla Wiegand",
+    "email": "Lavada.Goldner@yahoo.com",
+    "datePublished": "2015-10-05T01:18:16.953Z"
+}, {
+    "content": "consectetur consectetur consectetur do elit, adipisicing elit, ipsum sit do do ipsum lorem sed adipisicing amet adipisicing lorem ipsum adipisicing ",
+    "heading": "amet consectetur sed consectetur ",
+    "url": "amet-consectetur-sed-consectetur",
+    "author": "Kali Ondricka",
+    "email": "Lawrence58@yahoo.com",
+    "datePublished": "2015-10-04T08:35:58.662Z"
+}, {
+    "content": "sit lorem amet sit adipisicing ipsum elit, sed amet dolor amet ipsum lorem elit, do sit adipisicing sit sit sed ",
+    "heading": "ipsum ipsum lorem amet ",
+    "url": "ipsum-ipsum-lorem-amet",
+    "author": "Francesca Gutkowski",
+    "email": "Lucio87@gmail.com",
+    "datePublished": "2015-10-04T08:16:59.512Z"
+}, {
+    "content": "elit, dolor sed amet ipsum lorem ipsum amet adipisicing consectetur sit consectetur adipisicing dolor amet lorem lorem consectetur elit, ipsum ",
+    "heading": "lorem elit, lorem lorem ",
+    "url": "lorem-elit-lorem-lorem",
+    "author": "Mario Senger",
+    "email": "Mikayla.Rau33@gmail.com",
+    "datePublished": "2015-10-04T18:14:08.873Z"
+}, {
+    "content": "adipisicing sit lorem elit, consectetur amet lorem do adipisicing elit, elit, ipsum sed amet amet do sed consectetur lorem amet ",
+    "heading": "consectetur ipsum adipisicing amet ",
+    "url": "consectetur-ipsum-adipisicing-amet",
+    "author": "Mark Koepp",
+    "email": "Eino.Aufderhar@yahoo.com",
+    "datePublished": "2015-10-04T22:31:24.261Z"
+}
+], 
+
+"pic" : [
+	{
+   "content": "ipsum lorem sit amet dolor sit do dolor sit do ",
+    "datePublished": "2015-10-04T16:48:22.272Z",
+    "imgUrl": "public/images/news/photo-2.jpg"
+}, {
+	 "content": "sit elit, elit, dolor sed lorem consectetur dolor lorem consectetur ",
+    "datePublished": "2015-10-04T05:06:48.640Z",
+    "imgUrl": "public/images/news/photo-3.jpg"
+}, {
+	 "content": "amet consectetur consectetur elit, lorem ipsum sit ipsum lorem amet ",
+    "datePublished": "2015-10-04T04:03:53.707Z",
+    "imgUrl": "public/images/news/photo-4.jpg"
+}
+],
+
+"web" : [
+	{
+	 "linkUrl": "http://buck.info",
+    "content": "elit, lorem amet elit, consectetur sit sit ipsum sed lorem lorem sed adipisicing consectetur sit amet do sed amet dolor elit, dolor dolor ipsum do elit, adipisicing ipsum lorem sit do consectetur adipisicing do sed adipisicing sit elit, amet dolor elit, dolor elit, sed dolor adipisicing lorem consectetur dolor ipsum amet elit, consectetur adipisicing dolor dolor dolor amet ipsum ipsum elit, ipsum sit dolor elit, ipsum do adipisicing adipisicing amet sed sit lorem lorem elit, sed do lorem sit amet dolor lorem sit sed adipisicing lorem amet ipsum consectetur consectetur amet sit do dolor sit do sed ipsum amet do elit, ipsum amet adipisicing adipisicing elit, consectetur amet dolor sit sed lorem do ipsum consectetur lorem sed sed elit, elit, amet adipisicing ipsum consectetur consectetur dolor consectetur dolor do amet ipsum ipsum consectetur ipsum adipisicing sed consectetur elit, lorem adipisicing elit, consectetur ipsum sit ",
+    "datePublished": "2015-10-04T21:18:26.948Z"
+}, {
+	 "linkUrl": "https://natalie.org",
+    "content": "dolor amet sed sed dolor elit, dolor sed dolor ipsum dolor sit dolor amet elit, lorem dolor do adipisicing adipisicing sed amet ipsum do elit, amet sit do sit do amet elit, amet adipisicing consectetur consectetur adipisicing ipsum amet do lorem consectetur elit, amet adipisicing amet consectetur sit ipsum adipisicing ipsum ipsum elit, consectetur dolor sit elit, elit, consectetur sed dolor dolor elit, elit, do ipsum do elit, adipisicing elit, lorem do consectetur dolor lorem lorem consectetur lorem amet sit sit do consectetur adipisicing dolor sit amet amet dolor ipsum sed do elit, adipisicing lorem lorem do lorem lorem adipisicing ipsum sed do amet ipsum lorem amet adipisicing consectetur do sed sit elit, sit sit adipisicing adipisicing consectetur adipisicing dolor consectetur sed dolor elit, adipisicing amet do do elit, ipsum consectetur adipisicing sed sed consectetur sit dolor dolor sed adipisicing lorem dolor sit elit, ",
+    "datePublished": "2015-10-04T07:41:01.871Z"
+}, {
+	 "type": "link",
+    "linkUrl": "https://audra.com",
+    "content": "dolor sit adipisicing amet elit, adipisicing consectetur ipsum sit dolor sed ipsum do elit, sit amet do do do amet elit, sed sit ipsum ipsum elit, amet lorem elit, sed sed dolor elit, adipisicing sit ipsum sed sed lorem amet sed do adipisicing adipisicing dolor ipsum amet lorem lorem do elit, elit, consectetur adipisicing ipsum sit lorem do lorem lorem sed ipsum lorem sit sit elit, lorem amet sed lorem sed ipsum sed amet ipsum adipisicing dolor lorem amet sed elit, amet lorem sed lorem elit, ipsum amet adipisicing adipisicing adipisicing ipsum do elit, do amet do sed sed dolor dolor do lorem ipsum sed sed amet adipisicing elit, lorem sit dolor consectetur adipisicing amet sit amet dolor elit, sit sed sit adipisicing lorem lorem adipisicing ipsum consectetur amet do lorem sed amet sit do adipisicing elit, dolor sit consectetur amet amet do consectetur ",
+    "datePublished": "2015-10-04T17:45:27.012Z"
+}
+]		
+}
