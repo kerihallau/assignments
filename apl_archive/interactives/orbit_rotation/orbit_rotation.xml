@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<INFO>
+	<TITLE>&lt;b&gt;Day On Mercury&lt;/b&gt;
+	</TITLE>
+	<ABOUT>	[About This Animation] - Some objects in the solar system are much larger than others, and tables of numbers often don’t give us an immediate “feel” for their relative sizes. So the Planet Size Comparator lets you compare any planet (or the Sun or Moon) against any other, and view them at the same scale. The diameters appear at the bottom in two ways ­ measured in kilometers (or miles) and as a ratio in which the diameter of the smaller object is taken to be one unit. Distance between planets is not to scale.
+	Select "HOW TO USE" or "LEARN MORE" for more information. Use the scroll bar on the right when necessary.
+	Click the "X" button to close this window and return to the program.
+	
+	</ABOUT>
+	<HOW_TO>	[How To Use] - The program will initially open comparing Earth on the left to Mercury on the right.
+	The diameters appear at the bottom in two ways ­ measured in kilometers (or miles) and as a ratio in which the diameter of the smaller object is taken to be one unit. 
+	Compare the Earth to all of the other planets in our solar system (plus the Moon) in turn by selecting the planet from the pull-down menu on the right. Then click 'COMPARE.'
+	After comparing our planet to all of the others, compare the Earth to the Sun. When one object is much larger than the other (for example, if you compare the Sun and Mercury), you can use the zoom button to make the smaller one visible. Then select the other planets from the left menu to compare them to the Sun.
+	You may also compare any planet to any other by selecting them from the pull-down menus and clicking 'COMPARE.'
+	
+	</HOW_TO>
+	<LEARN_MORE>	[Learn More] - (This section could be an informative blurb about the solar system and the various sizes.) 
+	(Maybe a question could be posed to get students thinking about size comparisons.) 
+	(It would also be great if an option for a hyperlink could be added to this frame so that students could click on it and another window opens (SNL content) to take the explanation even further.)
+	To learn more about the solar system visit Nasa's Solar System Exploration website by clicking the following link. &lt;a href="http://solarsystem.nasa.gov/index.cfm"target="_blank"&gt;&lt;font color="#99CCFF"&gt;http://solarsystem.nasa.gov/index.cfm&lt;/font&gt;&lt;/a&gt;
+	
+	</LEARN_MORE>
+	<PRINT>	[Print] - The information contained within the tabs of this panel is available for printing. We suggest using a printed version as a study guide/learning companion alongside the animation.
+
+	Simply click the printer icon below.  Your printer options panel will then appear.
+	</PRINT>
+	<FINAL>	Each time Mercury orbits the Sun twice (that is, in two Mercury years), it rotates three times about its axis. 
+	For an observer on the planet, the combination of these two motions means that a Mercury day takes two Mercury years!
+	In the time it takes the Earth to complete one year, or one orbit, Earth dwellers have experienced 365 days.  In the same amount of time, Mercury dwellers would have experienced 4 years but only 2 days!
+	</FINAL>
+</INFO>

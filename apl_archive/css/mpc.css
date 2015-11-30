@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+/* background around image (see email from david); change button style */
+body{
+	height: 100%;
+	background-color: #505050;
+}
+/*#side-bar{
+	background: black;
+	height: 200px;
+}*/ 
+#planet img{
+	width: 854px;
+	height: 854px;
+	object-fit: scale-down;
+	margin-top: -15px;
+	margin-left: 17px;
+}
+#planet150, #planet240, #planet330 {
+	display: none;
+} 
+.grid-outline{
+	position: absolute;
+	width: 838px;
+	margin-left: 34px;
+}
+.grid-item{
+	width: 19.5%;
+	height: 102px;
+	padding: 0px;
+	margin: -2.5px -2.5px -3px -2.5px;
+	border: 1px solid cyan;
+	display: inline-block;
+	box-sizing: content-box;
+}
+.grid-item:hover{
+	background-color: rgba(0, 0, 0, .7);
+	color: rgba(0, 0, 0, .75);
+}
+.hoverContent{
+	display: none;
+	float: left;
+	font-size: 5em;
+	background: orange;
+	margin: 0;
+	padding: 0px 0px 10px 0px;
+	width: 100%;
+	height: 100%;
+	font-color: black;
+}
+h1{
+	/*improve formatting on this: within the box? */
+	color: orange;
+	font-size: 2em;
+}
+.buttons{
+	margin-left: 17px;
+	margin-bottom: 3px;
+}
+a.featureBox, a.featureBox:hover{
+	color: rgba(0, 0, 0, .75);
+	background-color: rgba(0, 0, 0, .7);
+}
+

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mercury Mosaic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   	<link rel="stylesheet" href="css/mpc.css">
+   <!--do i need this if i want to do 4 different views? -->
+  
+    <script>
+        var currentView = "viewA";
+        var planet, planetImg;
+        document.addEventListener("DOMContentLoaded", function() {
+            planet = document.querySelector("#planet");
+            planetImg = planet.querySelector("img");
+
+            var gridItems = document.querySelectorAll(".grid-item");
+            for(var i = 0; i < gridItems.length; i++){
+                gridItems[i].addEventListener("mouseover", function(){
+                    this.querySelector(".hoverContent").style.display = "block";
+                });
+                gridItems[i].addEventListener("mouseout", function(){
+                    this.querySelector(".hoverContent").style.display = "none";
+                });
+            }
+        });
+
+        function changePlanetImage(newView){
+            if(newView == 'viewA')
+            {
+                //set #planet background image to Image A
+                planetImg.src = "images/mosaic_a.png";
+                document.getElementById("viewA").style.display = "block";
+                document.getElementById("viewB").style.display = "none";
+				//add the other u are hiding
+                currentView = "viewA";
+            }else if(newView == "viewB");
+            {
+                //set #planet img background image to Image B
+                planetImg.src = "images/mosaic_b.png";
+                document.getElementById("viewA").style.display = "none";
+                document.getElementById("viewB").style.display = "block";
+				//hide others
+                currentView = "viewB";
+            }
+        }
+//repeat for view c and d as else if's (can add an else at the end as error message
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+            <h1>Choose a button below to see the planet centered on that longitude</h1>
+                <button class="btn btn-lg btn-primary" onclick="changePlanetImage("viewA");">Click To Spin</button>
+                	<!-- add string in paren for other buttons -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8" id="planet">
+                <div class="row ">
+                    <img src="images/mosaic_a.png" class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="grid-outline" id="viewA">
+                        <div class="grid-row" id="row1">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,1</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,1</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,1</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,1</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,1</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row2">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,2</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,2</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row3">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,3</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,3</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row4">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,4</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,4</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row5">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,5</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,5</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row6">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,6</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,6</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row7">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,7</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,7</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row8">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,8</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,8</span>
+                            </div>
+                        </div>          
+               </div>
+                    <div class="grid-outline" id="viewB">
+                        <div class="grid-row" id="row1">
+                            <div class="grid-item">
+                                <span class="hoverContent">A,1</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">B,1</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">C,1</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">D,1</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">E,1</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row2">
+                            <div class="grid-item">
+                                <span class="hoverContent">A,2</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">B,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">C,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">D,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">E,2</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row3">
+                            <div class="grid-item">
+                                <span class="hoverContent">A,3</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">B,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">C,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">D,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">E,3</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row4">
+                            <div class="grid-item">
+                                <span class="hoverContent">A,4</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">B,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">C,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">D,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">E,4</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row5">
+                            <div class="grid-item">
+                                <span class="hoverContent">A,5</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">B,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">C,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">D,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">E,5</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row6">
+                            <div class="grid-item">
+                                <span class="hoverContent">A,6</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">B,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">C,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">D,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">E,6</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row7">
+                            <div class="grid-item">
+                                <span class="hoverContent">A,7</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">B,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">C,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">D,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">E,7</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row8">
+                            <div class="grid-item">
+                                <span class="hoverContent">A,8</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">B,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">C,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">D,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">E,8</span>
+                            </div>
+                        </div> 
+                </div>
+                
+                <img src="images/mosaic_a.png" class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="grid-outline" id="viewA">
+                        <div class="grid-row" id="row1">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,1</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,1</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,1</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,1</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,1</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row2">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,2</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,2</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row3">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,3</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,3</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row4">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,4</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,4</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row5">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,5</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,5</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row6">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,6</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,6</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row7">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,7</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,7</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row8">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,8</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,8</span>
+                            </div>
+                        </div>          
+               </div>
+               
+ <!--change this for one of the new views
+               <img src="images/mosaic_a.png" class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="grid-outline" id="viewA">
+                        <div class="grid-row" id="row1">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,1</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,1</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,1</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,1</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,1</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row2">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,2</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,2</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,2</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row3">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,3</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,3</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,3</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row4">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,4</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,4</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,4</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row5">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,5</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,5</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,5</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row6">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,6</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,6</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,6</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row7">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,7</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,7</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,7</span>
+                            </div>
+                        </div>
+                        <div class="gird-row" id="row8">
+                            <div class="grid-item">
+                                <span class="hoverContent">a,8</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">b,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">c,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">d,8</span>
+                            </div>
+                            <div class="grid-item">
+                                <span class="hoverContent">e,8</span>
+                            </div>
+                        </div>          
+               </div>
+ end the new views -->               
+                
+                
+                
+                
+            </div>
+            <div class="col-lg-4" id="side-bar">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

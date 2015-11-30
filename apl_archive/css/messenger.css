@@ -1,0 +1,827 @@
+/* CSS Document TEST */
+html, body {
+	background-color: #505050;
+	font-size: 100%;
+}
+.top-buffer {
+	margin-top: 20px;
+}
+
+/*medium+ screen sizes*/
+@media (min-width:992px) {
+.desktop-only {
+	display: block !important;
+}
+.mobile-only {
+	display: none !important;
+}
+}
+
+/*small screen sizes*/
+@media (max-width: 991px) {
+.mobile-only {
+	display: block !important;
+}
+.desktop-only {
+	display: none !important;
+}
+}
+/*GENERAL STYLES*/
+h1 {
+	font-size: 1.675em;
+	font-weight: normal;
+	color: #ddd;
+}
+h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 9px 0 16px 10px;
+}
+h3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 20px 0 6px 10px;
+	color: #FFE066;
+	/*border-bottom:thin #fff solid;*/
+	padding-bottom: 5px;/*cursor: pointer;*/
+}
+a.box-title {
+	color: #ffe066;
+}
+.box > h3 {
+	font-size: 1em !important;
+	color: #ffcc00;
+	margin-top:8px;
+}
+h4 {
+	font-size: 0.875em;
+	font-weight: bold;
+	margin: 12px 0 6px 10px;
+	color: #52a7db;/*note that this color has to look good on dark and light backgrounds*/
+}
+.inlineH4 {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0;
+	color: #52a7db;
+}
+p, table {
+	font-size: 0.875em;
+	line-height: 1.4;
+	margin-left: 10px;
+}
+tbody tr th {
+	font-weight: bold;
+	border-bottom: 2px solid;
+}
+ul, ol {
+	font-size: 0.875em;
+	line-height: 1.4;
+	margin-top: 12px;
+	display: table;
+}
+.imageCredit {
+	font-style: italic;
+	font-size: .8em;
+}
+ul li, ol li {
+	margin-top: 4px;
+	position: relative;
+}
+ul li ul {
+	 font-size: 1em;	
+}
+a {
+	color: #FFB84D;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFCC80;
+	text-decoration: none;
+	border-bottom: 1px dotted #FFCC80;
+}
+hr {
+	background-color: #C2C2C2;
+	border-color: #C2C2C2;
+}
+blockquote {
+	border-left: 3px solid #3d8ac0;
+	font-size: 1em;
+	line-height: 2;
+	margin: 12px 0 6px 10px;
+	padding: 0 20px;
+}
+.socialIcons a:hover {
+	border: none;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	border-top: 1px solid #666;
+	line-height: 1.42857;
+	padding: 8px;
+	vertical-align: top;
+}
+table tr td {
+	padding: 5px;
+}
+#galleryNav ul.nav-tabs {
+	border-bottom: #666 solid thin;
+	width: 100%;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+#galleryNav ul.nav-tabs > li > a {
+	border-color: #666;
+}
+#galleryNav ul.nav-tabs > li.active > a {
+	background-color: #5a7fa4;
+	color: #fff;
+}
+#defaultCountdown, #sinceLaunch, #sinceFlyby {
+	font-size: .7em;
+}
+.twitter-text {
+	font-size: 1em !important;
+}
+/*table {font-size:13px; line-height:1.25; border:1px solid #666 !important;}
+table tr {border:1px solid #666 !important;}
+table tr td {padding:0.5em; border:1px solid #666 !important;}*/
+a.btn_white {
+	color: #fff;
+	text-decoration: underline;
+	font-style: italic;
+}
+.vcenter {
+	display : table-cell;
+	vertical-align : middle;
+	float: none;
+}
+.modal-body {
+	border: none;
+	padding: 10px;
+	padding-top: 0px;
+}
+.modal-body p {
+	margin-top: 20px;
+}
+.modal-header p {
+	font-size: 1em;
+}
+.modal-header span.videoDuration {
+	font-size: .8em;
+	font-style: italic;
+}
+a.viewMoreLink {
+	float: right;
+	vertical-align: bottom;
+	margin: 10px;
+	font-size: .8em;
+	font-weight: bold;
+	line-height: 1em;
+}
+.thumbPadding {
+	margin: 10px;
+}
+.secondLevel > ul {
+	margin-top: -10px;
+}
+#multimediaPhotos .box {
+	min-height: 350px;
+}
+#multimediaPhotos .box div.scroll {
+	height: 300px;
+}
+#multimediaPhotos img {
+	margin-bottom: 10px;
+}
+#multimediaPhotos a.download {
+	margin-top: 30px !important;
+}
+#bioListing .box {
+	height: 175px;
+}
+.captionBox {
+	border: thin solid #666;
+	font-style: italic;
+	margin: 10px;
+}
+.captionBox img {
+	margin: 5px 0px 5px;
+}
+.captionBox h4 {
+	font-size: 0.9em;
+	margin: 10px;
+}
+.captionBox p {
+	font-size: .75em;
+	margin: 10px;
+}
+.featuredNews img {
+	border: #fff thin solid;
+	margin: 0 10px 0;
+	width: 100px;
+	height: auto;
+}
+#pageContent {
+	overflow: auto;
+	height: 1%;
+	width: 100%;
+	color: #000;
+	background-color: #f4f4f4;
+	padding: 10px;
+	-moz-border-radius: 6px 6px 6px 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px 6px 6px 6px;
+	-moz-box-shadow: 3px 3px 5px #535353;
+	-webkit-box-shadow: 3px 3px 5px #535353;
+	box-shadow: 3px 3px 5px #535353;
+}
+h2>p.lead {
+	font-style: italic;
+	font-size: .8em;
+	font-weight: normal;
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+#pageContent h2 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+#pageContent h2>p.date, #pageContent h2>span.date {
+	font-size: .8em;
+	font-style: italic;
+	font-weight: normal;
+	margin-left: 0px;
+display: block;
+margin-bottom:5px;
+}
+#pageContent h3 {
+	color: #000;
+}
+#pageContent img {
+	padding: 0px 10px 0px;
+}
+#whatWeKnow .box {
+	height: 250px;
+}
+#whatWeKnow .box li {
+	font-size: .9em;
+}
+#accordion-container {
+	font-size: 14px;
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}
+.accordion-header {
+	margin: 5px 0 0 0;
+	padding: 5px 5px 5px 20px;
+	color: #fff;
+	cursor: pointer;
+	line-height: 1.2;
+	width: 1220px;/*Alysen added to force expand the accordian contents so box content won't get smooched and scroll*/
+}
+.active-header {
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+	background: url(../images/active-header.gif);
+	background-repeat: no-repeat;
+	background-position: left 10px;
+}
+.active-header:hover {
+	background: url(../images/active-header.gif);
+	background-repeat: no-repeat;
+	background-position: left 10px;
+}
+.inactive-header {
+	background: url(../images/inactive-header.gif);
+	background-repeat: no-repeat;
+	background-position: left 10px;
+}
+.inactive-header:hover {
+	background: url(../images/inactive-header.gif);
+	background-repeat: no-repeat;
+	background-position: left 10px;
+}
+.accordion-content {
+	display: none;
+	padding: 10px 15px;
+	margin: 0 10px 0 0;
+	background: transparent;
+	font-size: 15px;
+}
+.img-thumbnail {
+	background-color: transparent;
+	margin: 0 5px 10px 0;
+}
+.noMargin {
+	margin-top: -15px;
+}
+.shortBtn {
+	max-width: 150px;
+	white-space: normal;
+	margin-top: 10px;
+	line-height: 1em;
+}
+.modal-content {
+	color: #000;
+	width: 680px;
+	margin-left: -40px;
+}
+.navbar-inverse {
+	background-color: transparent;
+	border: none;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #999999;
+}
+.navbar-nav > li > a {
+	padding-bottom: 15px;
+	padding-top: 15px;
+	line-height: 20px;
+}
+.navbar-nav > li > a:hover, a.navbar-brand:hover {
+	border: none;
+}
+.nav > li > a {
+	display: block;
+	padding: 10px 15px;
+	position: relative;
+}
+.dropdown-menu > li > a {
+	clear: both;
+	color: #333333;
+	display: block;
+	font-weight: normal;
+	line-height: 1.42857;
+	padding: 3px 20px;
+	white-space: nowrap;
+}
+.dropdown-menu > li > a:hover {
+	border: none;
+}
+
+@media (min-width: 1200px) {
+.backgroundImg {
+	background: url(../images/template/banner_spacecraft.png) no-repeat;
+}
+}
+.navbar-brand {/* For the "New Horizons" logo in the header */
+	line-height: 28px;
+	min-width: 268px;
+}
+a.navbar-brand span {
+	color: #fff;
+	font-size: 26px;
+	text-decoration: none;
+}
+.navbar-brand small, .navbar-brand-noBack small {
+	display: block;
+	font-size: 13px;
+	color: #F3D886;
+	font-weight: bold;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: transparent;
+	color: #fff;
+	font-weight: bold;
+}
+/*FOR THIRD LEVEL PAGES---HEADER CUSTOMIZATION*/
+.thirdTier {
+	background-color: #222;
+	height: 60px;
+}
+div.thirdTier .navbar-nav {
+	height: 40px;
+	padding-right: 10px;
+}
+div.thirdTier .navbar-nav > li > a {
+	margin-right: 10px;
+	height: 35px;
+}
+.socialIcons {
+	text-align: right;
+	margin: 10px 0px 5px;
+}
+.socialIcons img {
+	width: 25px;
+	height: 25px;
+	margin: 0 2px 0;
+}
+.countdown-section {
+	font-size: 1.1em !important;
+}
+/*GENERAL ELEMENTS FOR MAIN AND FOYER PAGES*/
+div.pageTitle {
+	color: #ddd;
+	font-size: 1.7em;
+	font-weight: bold;
+	margin-top: 0.2em;
+}
+.foyer, .main {
+	color: #fff;
+}
+textarea {
+	color: #000;
+}/*keep this. fixes textareas which are turned white when above style is in place*/
+.foyer .column, .main .column {
+	padding: 5px;
+}
+.main .column .box, .foyer .column .box, .foyer .box {
+	border: 1px solid #c2c2c2;
+	padding: 10px;
+	overflow-y: auto;
+	/*-webkit-overflow-scrolling: touch*/   /* something I was hoping would show scrollbars for divs on the ipad */
+	line-height: 1.2em;
+}
+.primaryFoyer .column .box {
+/*background-color:#000;*/
+}
+
+/*The below is for any screen above a handheld...I wanted to make sure the boxes were all the same height on larger screens*/
+@media (min-width: 480px) {
+.main .column .box, .foyer .column .box {
+	height: 240px;
+}
+.featuredStory {
+	
+	min-height: 427px;
+	background-color: #000;
+	overflow: hidden !important;
+	padding: 0px !important;
+	position: relative;
+	width: 100%; /* for IE 6 */
+}
+.featuredStory img{
+	position: absolute;
+	right: 0;
+}
+.featuredStory img.floatBottom{
+	bottom: 0;
+}
+.featuredStory img.floatTop{
+	top: 0;
+}
+.featuredStory div.floatedTitle, .picOfDay div.floatedTitle {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 100%;
+	padding:1px;
+	background-color: rgba(1, 1, 1, 0.6);
+}
+.featuredStory div.floatedTitle p, .picOfDay div.floatedTitle p {
+	font-size: 2em;
+	text-align: left;
+	text-shadow: 2px 2px 2px #000;
+	font-weight: bold;
+	padding-top: 2px;
+}
+
+}
+div.clickable { /* Containing div must have a position value */
+	position: relative;
+}
+div.clickable a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-decoration: none; /* Makes sure the link   doesn't get underlined */
+	z-index: 10; /* raises anchor tag above everything else in div */
+	background-color: white; /*workaround to make clickable in IE */
+	opacity: 0; /*workaround to make clickable in IE */
+	filter: alpha(opacity=1); /*workaround to make clickable in IE */
+}
+.box div.scroll {
+	overflow: auto !important;
+	height: 200px;
+	padding: 0;
+}
+.box div.scroll ul {
+	margin: 3px 0;
+}
+.foyer .column .boxBig {
+	border: 1px solid #666;
+	padding: 0;
+	height: 450px;
+	overflow: hidden !important;
+	line-height: 1.3em;
+}
+.foyer .column .boxBig h3 {
+	padding: 5px;
+}
+.foyer .column .boxBig div.scroll {
+	overflow: auto !important;
+	height: 395px;
+	padding: 10px;
+}
+.box h3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 0 10px 6px 0;
+	color: #FFE066;
+}
+.box p {
+	margin-right: 10px;
+	line-height: 1.3em;
+}
+.box ul {
+	padding: 0 16px;
+}
+/*a.download:link, .download {
+	min-width: 95px;
+	width: 95px;
+}
+
+ul {margin-left:20px; margin-top:-10px;}*/
+
+.downloadArea {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+.activityOverview>p {
+	font-size: .8em;
+}
+a.viewResources {
+	font-size: .8em;
+}
+a.download:link, .download {
+	min-width: 130px;
+	text-align: left;
+	margin: 5px !important;
+	font-size: 12px;
+	color: #fff;
+	border-radius: .4em;
+	display: block;
+	padding: 0.5em 1em;
+	background: #2a6496 !important;
+	border: #999 solid thin !important;
+}
+.box a.download:hover, .box a.download:visited, .box .download:hover, .box .download:visited {
+	background: #1d527f !important;
+	text-decoration: none;
+}
+/*
+.box a.readMore{margin:5px !important; width:130px;font-size:12px;color:#fff;border-radius: .4em;}
+.box a.readMore:link {}
+.box a.readMore:hover, .box a.readMore:visited {background:#1d527f !important;  text-decoration:none;}
+*/
+
+div.box.noBorder {
+	height: 100% !important;
+	border: none !important;
+}
+div.coolPosters div.row {
+	overflow: auto;
+	margin: 5px 0;
+	padding: 5px 0;
+}
+div.coolPosters img {
+	max-height: 150px;
+}
+.GCactivity {
+	max-height: 150px;
+	overflow: auto;
+}
+.GCactivity p, .GCactivity ul {
+	font-size: .8em !important;
+}
+div.GCdownloads {
+	width: 50%;
+	float: left;
+	margin-bottom: 10px;
+}
+.dropdown-menu {
+	background-color: #eee;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	display: none;
+	float: left;
+	font-size: 1em;
+	left: 0;
+	list-style: none outside none;
+	margin: 2px 0 0;
+	min-width: 120px;
+	padding: 5px 0;
+	position: absolute;
+	top: 100%;
+	z-index: 1000;
+}
+.dropdown-menu li a:hover {
+	background-color: #888;
+	color: #fff;
+}
+/*for bootstrap accordian*/
+.panel-body {
+	color: #000;
+}
+.panel-default > .panel-heading {
+	padding: 5px 10px;
+	color: #fff;
+	background-color: #2a6496;
+	border-color: #ddd;
+}
+div.caption h3 {
+	margin: 15px 0px 15px;
+}
+.panel-title > a {
+	font-size: .8em;
+	text-decoration: none;
+}
+.panel-heading a:after {
+	font-family: 'Glyphicons Halflings';
+	content: "\e114";
+	float: right;
+	color: #fff;
+}
+.panel-heading a.collapsed:after {
+	content: "\e080";
+}
+.panel-default {
+	margin-bottom: 5px;
+}
+.thumbnail h3 {
+	margin: 10px;
+}
+.thumbnail {
+	background-color: transparent;
+	border: none;
+}
+.thumbnail img {
+	min-height: 230px;
+	max-height: 230px;
+	min-width: 230px;
+	min-height: 230px;
+	border: thin #999 solid;
+}
+.column .whiteBack {
+	background-color: #fff;
+	color: #000;
+}
+.column .noBorder {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+.footTitle {
+	background-color: #222;
+	margin: 0;
+	border: 1px solid #C2C2C2;
+	border-bottom: none;
+	padding: 3px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #F3D886;
+}
+.footTitle a {
+	color: #F3D886;
+}
+/*FOOTER STYLES*/
+footer .row, .footerRow {
+	background-color: transparent;
+	border: none;
+	color: #fff;
+	font-size: .8em;
+	padding: 0 10px 0;
+}
+.footerRow a {
+	text-decoration: underline;
+	color: #fff;
+}
+.footerRow img {
+	margin: 0 8px 0 0;
+}
+/*ELEMENTS FOR DETAILS PAGES*/
+.breadcrumb {
+	background-color: transparent;
+	font-size: .625em;
+	font-weight: bold;
+	color: #fff;
+}
+input, select, #arithmeticCaptchaUserInput {
+	color: #000;
+}
+/*added by Alysen as captcha field was white text and unreadable. Unsure why. added this hack for now.*/
+
+
+.whiteBack {
+	color: #000;
+	background-color: #fff;
+	padding: 20px;
+}
+.blackBack {
+	color: #fff;
+	background-color: #111;
+	padding: 20px;
+}
+.well {
+	margin-top: 10px;
+}
+div.linkBox:hover {
+	background-color: #ccc !important;
+}
+div.carousel p {
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+	color: #F3D886;
+	font-weight: bold;
+}
+.carousel-control.left, .carousel-control.right {
+	background-image: none
+}
+.carousel-indicators {
+	bottom: -35px;
+}
+.carousel-inner {
+	margin-bottom: 40px;
+}
+.carousel-caption {
+	top: auto;
+	bottom: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 5px 5px 0px 5px;
+}
+
+@media print {
+html, body {
+	background-color: #fff;
+	background-image: none;
+	color: #000;
+}
+nav, footer {
+	display: none;
+}
+.foyer .column .boxBig {
+	border: none !important;
+	padding: 0;
+	height: auto !important;
+	overflow: visible !important;
+	line-height: 1.3em;
+}
+.foyer .column .boxBig h3 {
+	padding: 10px 10px 0;
+}
+.foyer .column .boxBig div.scroll {
+	overflow: visible !important;
+	height: auto !important;
+	padding: 10px;
+}
+a:link:after, a:visited:after {
+	content: " (" attr(href) ") ";
+	font-size: 80%;
+	text-decoration: none;
+}
+@page {
+	margin: 1.5cm 0.5cm 2cm;
+}
+}
+.pull-right {
+	float: right !important;
+	margin-left: 10px;
+}
+.pull-left {
+	float: left !important;
+	margin-right: 10px;
+}
+footer .row, .footerRow {
+	color: #ccc;
+	font-size: 0.675em;
+}
+.footerRow a {
+	color: #ccc;
+	text-decoration: none;
+	border-bottom: 1px dotted #ccc;
+}
+.footerRow a:hover {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+}
+.watermark {
+	font-size: 1.4em;
+	border: thin solid #fff;
+	padding: 10px;
+	background-color: #fff;
+	color: red !important;
+	margin-top: 10px;
+}
+.btn-subscribe {
+	background-color: hsl(214, 37%, 28%) !important;
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7a99c1", endColorstr="#2c4361");
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#7a99c1), to(#2c4361));
+	background-image: -moz-linear-gradient(top, #7a99c1, #2c4361);
+	background-image: -ms-linear-gradient(top, #7a99c1, #2c4361);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7a99c1), color-stop(100%, #2c4361));
+	background-image: -webkit-linear-gradient(top, #7a99c1, #2c4361);
+	background-image: -o-linear-gradient(top, #7a99c1, #2c4361);
+	background-image: linear-gradient(#7a99c1, #2c4361);
+	border-color: #2c4361 #2c4361 hsl(214, 37%, 19.5%);
+	color: #fff !important;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.56);
+	-webkit-font-smoothing: antialiased;
+	font-size:.8em;
+}
